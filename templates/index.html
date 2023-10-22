@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Веб приложение для прогнозирования размеров
+    сварного шва при электронно-лучевой сварке
+    тонкостенных конструкций аэрокосмического назначения</h2>
+    <h3>Введите параметры в поля и нажмите "оправить"</h3>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+
+    <form action="" method="post">
+        <p>Величина сварочного тока</p>
+        <p>
+            <label for="IW">(IW)</label>
+            <input type="text" name="IW">
+        </p>
+         <p>Ток фокусировки электронного пучка</p>
+        <p>
+            <label for="IF">(IF)</label>
+            <input type="text" name="IF">
+        </p>
+        <p>Скорость сварки</p>
+        <p>
+            <label for="VW">(VW)</label>
+            <input type="text" name="VW">
+        </p>
+        <p>Расстояние от поверхности образцов до электронно-оптической системы</p>
+        <p>
+            <label for="FP">(FP)</label>
+            <input type="text" name="FP">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+
+    </form>
+
+</body>
+</html>
